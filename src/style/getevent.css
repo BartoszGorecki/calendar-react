@@ -1,0 +1,37 @@
+.add-btn {
+    padding: .5rem 2rem;
+    box-shadow: 0 0 0 2px #1ebc30 inset;
+    margin: 2rem auto;
+    background: #e5f9e7;
+    border-radius: 4px;
+    color: #1ebc30;
+    display: block;
+    transition: .3s ease-out;
+    cursor: pointer;
+  }
+  .add-btn:hover {
+      background: #1ebc30;
+      color: white
+  }
+  .extradisabled:disabled {
+    box-shadow: 0 0 0 2px #1b1c1d inset;
+    background: #ccc;
+    color: #1b1c1d;
+    cursor: none;
+  }
+  .event-form p{
+    color: #9f3a38;
+    box-shadow: 0 0 0 1px #db2828 inset;
+    background: #ffe8e6;
+    width: 80%;
+    line-height: 30px;
+    margin: 0 auto;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .event-form input {
+    width: 80%;
+    margin: 1rem auto;
+    display: block;
+  }

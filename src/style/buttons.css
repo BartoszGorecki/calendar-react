@@ -1,0 +1,34 @@
+.form-inline {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+  }
+  .btn {
+    flex: 1;
+    outline: none;
+    box-shadow: 0 0 0 2px #2185d0 inset;
+    color: #2185d0;
+    padding: .375rem .75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #dff0ff;
+    transition: .3s ease-out;
+  }
+  .btn:hover {
+    background: #2185d0;
+    color: white
+  }
+  .form-inline2 {
+    padding: 1rem;
+    width: 100%;
+    height: 3rem;
+  }
+  .form-inline2 label {
+    font-size: 1.1rem
+  }
+  .form-control {
+    font-size: 1.1rem;
+    color: #495057;
+    padding: .3 rem;
+    width: 13rem;
+  }

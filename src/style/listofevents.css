@@ -1,0 +1,60 @@
+.events-list {
+    position: absolute;
+    top: 0;
+    left: -22rem;
+    width: 20rem;
+    background-color: #e1f7f7;
+    box-shadow: 0 0 0 3px #10a3a3 inset;
+    padding: 2rem 0;
+    border-radius: 6px;
+    color: #10a3a3;
+  }
+  .events-list ul {
+    width: 100%;
+    padding: 2rem;
+  }
+  .events-list ul li {
+    margin: .5rem 0;
+    cursor: pointer;
+    transition: .3s;
+    padding: 0 .5rem;
+    position: relative;
+    background: white;
+    border-radius: 2px;
+    line-height: 30px;
+  }
+  .events-header {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .event-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  .event-date {
+    font-size: .8rem;
+  }
+  .slide-up, .slide-down {
+    max-height: 0;            
+    overflow-y: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  .slide-down {            
+    max-height: 5rem;
+  }
+  .pretty-soon {
+    color: red
+  }
+  .mrx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -1.2rem;
+    color: #ccc;
+    font-size: 14px;
+    transition: .3s ease-in;
+  }
+  .mrx:hover {
+      color: #db2828;
+  }
