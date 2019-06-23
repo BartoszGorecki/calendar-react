@@ -14,7 +14,7 @@ li {
   list-style: none;
 }
 span {
-  display: block
+  display: block;
 }
 button {
   border: none;
@@ -30,30 +30,33 @@ button {
   display: flex;
   position: relative;
   flex-direction: column;
-  border: 1px solid rgba(0, 0, 0, .15);
-  border-radius: .2rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.2rem;
 }
 .card-header {
   padding: 1rem;
   text-align: center;
-  background: rgba(0, 0, 0, .05)
+  background: rgba(0, 0, 0, 0.05);
 }
-.table, .table th {
+.table,
+.table th {
   border: 1px solid #dee2e6;
-  border-collapse: collapse
+  border-collapse: collapse;
 }
 .table th {
   border-bottom-width: 2px;
 }
-.table th, .table td {
+.table th,
+.table td {
   padding: 1.2rem;
 }
-.table thead tr th, .table tbody tr td {
+.table thead tr th,
+.table tbody tr td {
   flex: auto;
   text-align: center;
 }
 .table tbody tr td {
-  border: 1px solid rgba(0, 0, 0, .15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 .table tbody tr td {
   color: #495057;
@@ -61,17 +64,16 @@ button {
 
 /***************** ON CALENDAR *********************/
 .activeDay {
-  border: 5px solid #10a3a3!important;
+  border: 5px solid #10a3a3 !important;
 }
 .eventDay:hover {
-
 }
 .eventDay {
   position: relative;
   cursor: pointer;
 }
 .eventDay:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 60%;
   height: 60%;
@@ -80,4 +82,19 @@ button {
   transform: translate(-50%, -50%);
   border: 2px solid tomato;
   border-radius: 50%;
+}
+.niedziela {
+  background: #10a3a3;
+}
+.available {
+  background: lightgray;
+}
+.available:hover {
+  border: 1px solid red;
+}
+.unavailable {
+  background: gray;
+}
+.today {
+  background: yellowgreen;
 }
