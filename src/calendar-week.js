@@ -35,7 +35,7 @@ class CalendarWeek extends React.Component {
     this.isCurrentDay(dayOfMonth) &&
     this.isCurrentMonth(currentmonth, currentyear);
 
-  availableDaysExceptEvents = (actualDate, dayOfMonth, index) =>
+  availableDays = (actualDate, dayOfMonth, index) =>
     this.isWeekDay(index) &&
     this.isFutureDay(actualDate, dayOfMonth) &&
     !this.isEventDay(actualDate, dayOfMonth, eventsInUk);
@@ -47,13 +47,13 @@ class CalendarWeek extends React.Component {
         {this.props.days[0].map((item, index) => (
           <td
             onClick={
-              this.availableDaysExceptEvents(actualDate, item, index)
+              this.availableDays(actualDate, item, index)
                 ? () => selectServiceDate(item)
                 : null
             }
             className={`${
               item
-                ? this.availableDaysExceptEvents(actualDate, item, index)
+                ? this.availableDays(actualDate, item, index)
                   ? "available"
                   : "unavailable"
                 : ""

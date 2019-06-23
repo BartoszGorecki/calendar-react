@@ -45,9 +45,9 @@ class App extends Component {
     }
   };
 
-  next = async () => {
+  next = () => {
     const { currentyear, currentmonth } = this.state;
-    (await currentmonth) === 11
+    currentmonth === 11
       ? this.setState({
           currentyear: currentyear + 1,
           currentmonth: 0,
@@ -59,9 +59,9 @@ class App extends Component {
         });
   };
 
-  previous = async () => {
+  previous = () => {
     const { currentyear, currentmonth } = this.state;
-    (await currentmonth) === 0
+    currentmonth === 0
       ? this.setState({
           currentyear: currentyear - 1,
           currentmonth: 11
@@ -107,6 +107,8 @@ class App extends Component {
 
   render() {
     const { currentday, currentmonth, currentyear } = this.state;
+
+    console.log(this.state);
     return (
       <div className="container">
         <div className="card">
